@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Data Mining Final Project | HyeokJu</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Data Mining Final Project" />
+<meta name="author" content="Hyeokju Yeon" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Data Mining Final Project" />
+<meta property="og:description" content="Data Mining Final Project" />
+<link rel="canonical" href="https://hyeok-ju.github.io/yh_zoo/project/data%20mining/excersize/2022/06/05/final_project.html" />
+<meta property="og:url" content="https://hyeok-ju.github.io/yh_zoo/project/data%20mining/excersize/2022/06/05/final_project.html" />
+<meta property="og:site_name" content="HyeokJu" />
+<meta property="og:image" content="https://hyeok-ju.github.io/yh_zoo/images" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-06-05T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://hyeok-ju.github.io/yh_zoo/images" />
+<meta property="twitter:title" content="Data Mining Final Project" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Hyeokju Yeon"},"dateModified":"2022-06-05T00:00:00-05:00","datePublished":"2022-06-05T00:00:00-05:00","description":"Data Mining Final Project","headline":"Data Mining Final Project","image":"https://hyeok-ju.github.io/yh_zoo/images","mainEntityOfPage":{"@type":"WebPage","@id":"https://hyeok-ju.github.io/yh_zoo/project/data%20mining/excersize/2022/06/05/final_project.html"},"url":"https://hyeok-ju.github.io/yh_zoo/project/data%20mining/excersize/2022/06/05/final_project.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/yh_zoo/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://hyeok-ju.github.io/yh_zoo/feed.xml" title="HyeokJu" /><link rel="shortcut icon" type="image/x-icon" href="/yh_zoo/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/yh_zoo/">HyeokJu</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/yh_zoo/about/">About Me</a><a class="page-link" href="/yh_zoo/search/">Search</a><a class="page-link" href="/yh_zoo/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Data Mining Final Project</h1><p class="page-description">Data Mining Final Project</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-06-05T00:00:00-05:00" itemprop="datePublished">
+        Jun 5, 2022
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Hyeokju Yeon</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      7 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/yh_zoo/categories/#project">project</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/yh_zoo/categories/#data mining">data mining</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/yh_zoo/categories/#excersize">excersize</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/Hyeok-Ju/yh_zoo/tree/master/_notebooks/2022-06-05-final_project.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/yh_zoo/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/Hyeok-Ju/yh_zoo/master?filepath=_notebooks%2F2022-06-05-final_project.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/yh_zoo/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/Hyeok-Ju/yh_zoo/blob/master/_notebooks/2022-06-05-final_project.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/yh_zoo/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FHyeok-Ju%2Fyh_zoo%2Fblob%2Fmaster%2F_notebooks%2F2022-06-05-final_project.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/yh_zoo/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h3"><a href="#부동산-공급과-수요에-따른-집값-분석">부동산 공급과 수요에 따른 집값 분석 </a></li>
+<li class="toc-entry toc-h3"><a href="#1.-서론-">1. 서론  </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#1-1.-주제-선정이유-">1-1. 주제 선정이유  </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#2.-데이터-소개-">2. 데이터 소개  </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#2-1.-데이터-제공-대회-">2-1. 데이터 제공 대회  </a></li>
+<li class="toc-entry toc-h4"><a href="#2-2.-데이터-소개-">2-2. 데이터 소개  </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#3.-분석-">3. 분석  </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#3-1.-네이버-뉴스-제목-워드클라우드-">3-1. 네이버 뉴스 제목 워드클라우드  </a></li>
+<li class="toc-entry toc-h4"><a href="#3-2.-전국-규모-아파트-가격-">3-2. 전국 규모 아파트 가격  </a></li>
+<li class="toc-entry toc-h4"><a href="#3-3.-시군구-규모-아파트-가격-">3-3. 시군구 규모 아파트 가격  </a></li>
+<li class="toc-entry toc-h4"><a href="#3-4.-수요와-공급-">3-4. 수요와 공급  </a></li>
+<li class="toc-entry toc-h4"><a href="#3-5.-타깃-설정과-수요와-공급-적용-">3-5. 타깃 설정과 수요와 공급 적용  </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#4.-결론-">4. 결론  </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#4-1.-한계점-">4-1. 한계점  </a></li>
+<li class="toc-entry toc-h4"><a href="#4-2.-추후-연구-방향-">4-2. 추후 연구 방향  </a></li>
+</ul>
+</li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-06-05-final_project.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="부동산-공급과-수요에-따른-집값-분석">
+<a class="anchor" href="#%EB%B6%80%EB%8F%99%EC%82%B0-%EA%B3%B5%EA%B8%89%EA%B3%BC-%EC%88%98%EC%9A%94%EC%97%90-%EB%94%B0%EB%A5%B8-%EC%A7%91%EA%B0%92-%EB%B6%84%EC%84%9D" aria-hidden="true"><span class="octicon octicon-link"></span></a>부동산 공급과 수요에 따른 집값 분석<a class="anchor-link" href="#%EB%B6%80%EB%8F%99%EC%82%B0-%EA%B3%B5%EA%B8%89%EA%B3%BC-%EC%88%98%EC%9A%94%EC%97%90-%EB%94%B0%EB%A5%B8-%EC%A7%91%EA%B0%92-%EB%B6%84%EC%84%9D"> </a>
+</h3>
+<p><strong>목차</strong></p>
+<ul>
+<li>
+<a href="#chapter1">1. 서론</a><ul>
+<li><a href="#section_1_1">1-1. 주제 선정이유</a></li>
+</ul>
+</li>
+<li>
+<a href="#chapter2">2. 데이터 소개</a><ul>
+<li><a href="#section_2_1">2-1. 데이터 제공 대회</a></li>
+<li><a href="#section_2_2">2-2. 데이터 소개</a></li>
+</ul>
+</li>
+<li>
+<a href="#chapter3">3. 분석</a><ul>
+<li><a href="#section_3_1">3-1. 네이버 뉴스 제목 워드클라우드</a></li>
+<li><a href="#section_3_2">3-2. 전국 규모 아파트 가격</a></li>
+<li><a href="#section_3_3">3-3. 시군구 규모 아파트 가격</a></li>
+<li><a href="#section_3_4">3-4. 수요과 공급</a></li>
+<li><a href="#section_3_5">3-5. 타깃 설정과 수요와 공급 적용</a></li>
+</ul>
+</li>
+<li>
+<a href="#chapter4">4. 결론</a><ul>
+<li>
+<a href="#section_4_1">4-1. 한계점</a> </li>
+<li>
+<a href="#section_4_2">4-2. 추후 연구 방향</a> </li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.-서론-">
+<a class="anchor" href="#1.-%EC%84%9C%EB%A1%A0-" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. 서론 <a class="anchor" id="chapter1"></a><a class="anchor-link" href="#1.-%EC%84%9C%EB%A1%A0-"> </a>
+</h3>
+<ul>
+<li>
+<strong>주제</strong> : 부동산 공급과 수요에 따른 집값 분석 -&gt; 집이 부족하여 집값이 계속 상승하는 것인가?<br>&lt;/br&gt;</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Load Packages</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span> 
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span> 
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">konlpy.tag</span> <span class="kn">import</span> <span class="n">Twitter</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+<span class="kn">from</span> <span class="nn">wordcloud</span> <span class="kn">import</span> <span class="n">WordCloud</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="1-1.-주제-선정이유-">
+<a class="anchor" href="#1-1.-%EC%A3%BC%EC%A0%9C-%EC%84%A0%EC%A0%95%EC%9D%B4%EC%9C%A0-" aria-hidden="true"><span class="octicon octicon-link"></span></a>1-1. 주제 선정이유 <a class="anchor" id="section_1_1"></a><a class="anchor-link" href="#1-1.-%EC%A3%BC%EC%A0%9C-%EC%84%A0%EC%A0%95%EC%9D%B4%EC%9C%A0-"> </a>
+</h4>
+<ul>
+<li><strong>뉴스에서도 항상 나오는 꾸준히 상승하는 집값에 대해 집이 부족하여 집값이 상승하는 것인가 궁금증을 해소하기 위함이다.</strong></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.-데이터-소개-">
+<a class="anchor" href="#2.-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%86%8C%EA%B0%9C-" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. 데이터 소개 <a class="anchor" id="chapter2"></a><a class="anchor-link" href="#2.-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%86%8C%EA%B0%9C-"> </a>
+</h3>
+<h4 id="2-1.-데이터-제공-대회-">
+<a class="anchor" href="#2-1.-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%9C%EA%B3%B5-%EB%8C%80%ED%9A%8C-" aria-hidden="true"><span class="octicon octicon-link"></span></a>2-1. 데이터 제공 대회 <a class="anchor" id="section_2_1"></a><a class="anchor-link" href="#2-1.-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%9C%EA%B3%B5-%EB%8C%80%ED%9A%8C-"> </a>
+</h4>
+<ul>
+<li><a href="https://dacon.io/"><strong>데이콘</strong></a></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="2-2.-데이터-소개-">
+<a class="anchor" href="#2-2.-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%86%8C%EA%B0%9C-" aria-hidden="true"><span class="octicon octicon-link"></span></a>2-2. 데이터 소개 <a class="anchor" id="section_2_2"></a><a class="anchor-link" href="#2-2.-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%86%8C%EA%B0%9C-"> </a>
+</h4>
+<ul>
+<li>
+<strong><a href="https://dacon.io/competitions/official/235724/overview/description">'한국 부동산 데이터 시각화 경진대회'</a>에서 제공한 데이터</strong><ul>
+<li>주택매매가격지수: 주택매매가격의 증감폭을 년월 별로 나타낸 데이터</li>
+<li>주택전세가격지수: 주택전세가격의 증감폭을 년월 별로 나타낸 데이터</li>
+<li>미분양주택현황: 년월 별로 시도별 미분양주택의 세대수를 나타낸 데이터</li>
+<li>아파트 실거래가격지수: 주택 실거래가격의 증감폭을 년월 별로 나타낸 데이터</li>
+<li>cf. 지수데이터란? 특정 년도 기준 증감 폭을 퍼센트로 나타낸 데이터(예시: 2017년도 기준 | 2017년도 데이터 100%, 2017년도 보다 증가 120%, 감소 80%) <p></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>통계청 데이터 포털</strong></p>
+<ul>
+<li>
+<a href="https://sgis.kostat.go.kr/developer/html/newOpenApi/api/dataApi/census.html">시군구 년도별 인구수 API</a>: 년도별 시군구 인구수를 나타낸 데이터 <p></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>시군구 지리정보</strong></p>
+<ul>
+<li>
+<a href="http://www.gisdeveloper.co.kr/?p=2332">시군구 지리정보 데이터</a>: 시군구 지리정보를 담고 있는 데이터</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### DACON DATA</span>
+<span class="n">unsold_home</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"./data/미분양주택현황.csv"</span><span class="p">)</span>
+<span class="n">Apartment_cost</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"./data/아파트 실거래가격지수.csv"</span><span class="p">)</span>
+<span class="n">house_cost</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"./data/주택매매가격지수(KB).csv"</span><span class="p">)</span>
+<span class="n">house_charter_cost</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"./data/주택전세가격지수(KB).csv"</span><span class="p">)</span>
+
+<span class="c1">### 시군구 지리정보</span>
+<span class="n">regions</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s2">"./data/ctp_rvn.shp"</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"cp949"</span><span class="p">)</span>
+
+<span class="c1">### 시군구 년도별 인구수 데이터 </span>
+<span class="n">population</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2016</span><span class="p">,</span><span class="mi">2017</span><span class="p">,</span> <span class="mi">2018</span><span class="p">,</span> <span class="mi">2019</span><span class="p">,</span> <span class="mi">2020</span><span class="p">]:</span>
+    <span class="n">population_subset</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">인구수.csv"</span><span class="p">)</span>
+    <span class="n">population_subset</span><span class="p">[</span><span class="s2">"year"</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span>
+    <span class="n">population</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">population</span><span class="p">,</span> <span class="n">population_subset</span><span class="p">])</span>
+    
+<span class="n">population</span><span class="p">[</span><span class="s2">"house_cnt"</span><span class="p">]</span> <span class="o">=</span> <span class="n">population</span><span class="p">[</span><span class="s2">"house_cnt"</span><span class="p">]</span>
+<span class="n">population</span> <span class="o">=</span> <span class="n">population</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.-분석-">
+<a class="anchor" href="#3.-%EB%B6%84%EC%84%9D-" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. 분석 <a class="anchor" id="chapter3"></a><a class="anchor-link" href="#3.-%EB%B6%84%EC%84%9D-"> </a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="3-1.-네이버-뉴스-제목-워드클라우드-">
+<a class="anchor" href="#3-1.-%EB%84%A4%EC%9D%B4%EB%B2%84-%EB%89%B4%EC%8A%A4-%EC%A0%9C%EB%AA%A9-%EC%9B%8C%EB%93%9C%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-" aria-hidden="true"><span class="octicon octicon-link"></span></a>3-1. 네이버 뉴스 제목 워드클라우드 <a class="anchor" id="section_3_1"></a><a class="anchor-link" href="#3-1.-%EB%84%A4%EC%9D%B4%EB%B2%84-%EB%89%B4%EC%8A%A4-%EC%A0%9C%EB%AA%A9-%EC%9B%8C%EB%93%9C%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-"> </a>
+</h4>
+<ul>
+<li>해당 코드는 원하는 키워드로 최신 네이버 뉴스의 제목을 크롤링해서 워드클라우드를 만들어 주는 코드이다.<p>&lt;/li&gt;
+</p>
+</li>
+<li>아래 집값에 관한 워드클라우드를 살펴보면, 상승과 하락이 빈도가 높은 것을 확인할 수 있다. 집값에 관해 나오는 기사는 하락과 상승에 대한 것이 많고, 많은 사람들 또한 관심이 있기 때문이라고 짐작할 수 있다.</li>
+&lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">search_word</span> <span class="o">=</span> <span class="s2">"집값"</span>  <span class="c1"># 검색어 지정</span>
+<span class="n">title_list</span> <span class="o">=</span> <span class="p">[]</span>
+ 
+<span class="k">def</span> <span class="nf">get_titles</span><span class="p">(</span><span class="n">start_num</span><span class="p">,</span> <span class="n">end_num</span><span class="p">):</span>
+    <span class="c1">#start_num ~ end_num까지 크롤링</span>
+    <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">start_num</span> <span class="o">&gt;</span> <span class="n">end_num</span><span class="p">:</span>
+            <span class="k">break</span>
+ 
+        <span class="n">url</span> <span class="o">=</span> <span class="s1">'https://search.naver.com/search.naver?where=news&amp;sm=tab_jum&amp;query=</span><span class="si">{}</span><span class="s1">&amp;start=</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">search_word</span><span class="p">,</span><span class="n">start_num</span><span class="p">)</span>
+        <span class="n">req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+ 
+        <span class="c1"># 정상적인 request 확인</span>
+        <span class="k">if</span> <span class="n">req</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+            <span class="n">html</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">text</span>
+            <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html</span><span class="p">,</span> <span class="s1">'html.parser'</span><span class="p">)</span>
+ 
+            <span class="c1"># 뉴스제목 뽑아오기</span>
+            <span class="n">titles</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span>
+                <span class="s1">'ul.list_news &gt; li &gt; div &gt; div &gt; a'</span>
+            <span class="p">)</span>
+ 
+            <span class="c1"># list에 넣어준다</span>
+            <span class="k">for</span> <span class="n">title</span> <span class="ow">in</span> <span class="n">titles</span><span class="p">:</span>
+                <span class="n">title_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">title</span><span class="p">[</span><span class="s1">'title'</span><span class="p">])</span>
+        <span class="n">start_num</span> <span class="o">+=</span> <span class="mi">10</span>
+ 
+<span class="k">def</span> <span class="nf">make_wordcloud</span><span class="p">(</span><span class="n">word_count</span><span class="p">):</span>
+    <span class="n">twitter</span> <span class="o">=</span> <span class="n">Twitter</span><span class="p">()</span>
+ 
+    <span class="n">sentences_tag</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1">#형태소 분석하여 리스트에 넣기</span>
+    <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">title_list</span><span class="p">:</span>
+        <span class="n">morph</span> <span class="o">=</span> <span class="n">twitter</span><span class="o">.</span><span class="n">pos</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+        <span class="n">sentences_tag</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">morph</span><span class="p">)</span>
+ 
+    <span class="n">noun_adj_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1">#명사와 형용사만 구분하여 이스트에 넣기</span>
+    <span class="k">for</span> <span class="n">sentence1</span> <span class="ow">in</span> <span class="n">sentences_tag</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">sentence1</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">tag</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'Noun'</span><span class="p">,</span> <span class="s1">'Adjective'</span><span class="p">]:</span>
+                <span class="n">noun_adj_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+ 
+    <span class="c1">#형태소별 count</span>
+    <span class="n">counts</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">noun_adj_list</span><span class="p">)</span>
+    <span class="n">tags</span> <span class="o">=</span> <span class="n">counts</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="n">word_count</span><span class="p">)</span>
+    
+    <span class="c1">#wordCloud생성</span>
+    <span class="c1">#한글꺠지는 문제 해결하기위해 font_path 지정</span>
+    <span class="n">wc</span> <span class="o">=</span> <span class="n">WordCloud</span><span class="p">(</span><span class="n">font_path</span><span class="o">=</span><span class="s1">'C:</span><span class="se">\\</span><span class="s1">Users</span><span class="se">\\</span><span class="s1">user</span><span class="se">\\</span><span class="s1">AppData</span><span class="se">\\</span><span class="s1">Local</span><span class="se">\\</span><span class="s1">Microsoft</span><span class="se">\\</span><span class="s1">Windows</span><span class="se">\\</span><span class="s1">Fonts</span><span class="se">\\</span><span class="s1">NanumGothicLight.ttf'</span><span class="p">,</span> <span class="n">background_color</span><span class="o">=</span><span class="s1">'white'</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+    <span class="n">cloud</span> <span class="o">=</span> <span class="n">wc</span><span class="o">.</span><span class="n">generate_from_frequencies</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">tags</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">'off'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">cloud</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+    <span class="c1">#1~200번게시글 까지 크롤링</span>
+    <span class="n">get_titles</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+ 
+    <span class="c1">#단어 30개까지 wordcloud로 출력</span>
+    <span class="n">make_wordcloud</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://github.com/Hyeok-Ju/yh_zoo/raw/master/images/wordcloud.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="3-2.-전국-규모-아파트-가격-">
+<a class="anchor" href="#3-2.-%EC%A0%84%EA%B5%AD-%EA%B7%9C%EB%AA%A8-%EC%95%84%ED%8C%8C%ED%8A%B8-%EA%B0%80%EA%B2%A9-" aria-hidden="true"><span class="octicon octicon-link"></span></a>3-2. 전국 규모 아파트 가격 <a class="anchor" id="section_3_2"></a><a class="anchor-link" href="#3-2.-%EC%A0%84%EA%B5%AD-%EA%B7%9C%EB%AA%A8-%EC%95%84%ED%8C%8C%ED%8A%B8-%EA%B0%80%EA%B2%A9-"> </a>
+</h4>
+<ul>
+<li>부동산 중 아파트를 타겟으로 전국의 아파트 실거래 지수를 살펴보았다.</li>
+<li>해당 데이터는 2017년도를 기준으로 지수가 만들어졌기 때문에 2017년 100%인 1로 나타나 있는 것을 볼 수 있다. </li>
+<li>또한 전국적으로 아파트 실거래 지수는 계속해서 상승하고 있는것을 확인할 수 있다.<p>&lt;/li&gt;
+</p>
+</li>
+<li>전국적으로 상승하고 있지만, 미시적으로 시군구도 같은지 살펴보자</li>
+&lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">Apartment_cost_prepared</span><span class="p">(</span><span class="n">Apartment_cost</span><span class="p">):</span>
+    <span class="n">col1</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"date"</span><span class="p">]</span>
+    <span class="n">col2</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"["</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">Apartment_cost</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()]</span>
+    <span class="n">col</span> <span class="o">=</span> <span class="n">col1</span> <span class="o">+</span> <span class="n">col2</span>
+    <span class="n">Apartment_cost</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">col</span>
+    <span class="n">Apartment_cost</span> <span class="o">=</span> <span class="n">Apartment_cost</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    
+    <span class="n">year</span> <span class="o">=</span>  <span class="p">[</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">-11-01"</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2006</span><span class="p">,</span> <span class="mi">2022</span><span class="p">)]</span>
+    <span class="n">Apartment_cost</span> <span class="o">=</span> <span class="n">Apartment_cost</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">Apartment_cost</span><span class="p">[</span><span class="s1">'date'</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">year</span><span class="p">)]</span>
+    <span class="n">Apartment_cost</span><span class="p">[</span><span class="s2">"year"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2006</span><span class="p">,</span> <span class="mi">2021</span><span class="p">)]</span>
+    <span class="k">return</span> <span class="n">Apartment_cost</span>
+
+<span class="n">Apartment_cost</span> <span class="o">=</span> <span class="n">Apartment_cost_prepared</span><span class="p">(</span><span class="n">Apartment_cost</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Apartment_cost_total</span>  <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">Apartment_cost</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">"year"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">"전국"</span><span class="p">)</span>
+<span class="n">Apartment_cost_total</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+                                <span class="n">yaxis</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+                                    <span class="n">tickmode</span> <span class="o">=</span> <span class="s1">'array'</span><span class="p">,</span>
+                                    <span class="n">tickvals</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="mi">121</span><span class="p">,</span> <span class="mi">10</span><span class="p">)],</span>
+                                    <span class="n">ticktext</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">/</span><span class="mi">100</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="mi">121</span><span class="p">,</span> <span class="mi">10</span><span class="p">)]),</span>
+                                <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">l</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+                                <span class="n">template</span><span class="o">=</span><span class="s2">"plotly_dark"</span><span class="p">)</span>
+<span class="n">Apartment_cost_total</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://github.com/Hyeok-Ju/yh_zoo/raw/master/images/1.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="3-3.-시군구-규모-아파트-가격-">
+<a class="anchor" href="#3-3.-%EC%8B%9C%EA%B5%B0%EA%B5%AC-%EA%B7%9C%EB%AA%A8-%EC%95%84%ED%8C%8C%ED%8A%B8-%EA%B0%80%EA%B2%A9-" aria-hidden="true"><span class="octicon octicon-link"></span></a>3-3. 시군구 규모 아파트 가격 <a class="anchor" id="section_3_3"></a><a class="anchor-link" href="#3-3.-%EC%8B%9C%EA%B5%B0%EA%B5%AC-%EA%B7%9C%EB%AA%A8-%EC%95%84%ED%8C%8C%ED%8A%B8-%EA%B0%80%EA%B2%A9-"> </a>
+</h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>아래의 그래프로 보면 몇몇 시군구를 제외한 모든 지역이 장기적으로 지속해서 상승하고 있는것을 볼 수 있다.<p></p>
+</li>
+<li>하지만 아래 그래프로 정확하게 살펴보기에는 한계가 있어보이니 지도로 나타내보자!</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">region_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'부산'</span><span class="p">,</span> <span class="s1">'대구'</span><span class="p">,</span> <span class="s1">'인천'</span><span class="p">,</span> <span class="s1">'광주'</span><span class="p">,</span> <span class="s1">'대전'</span><span class="p">,</span> <span class="s1">'울산'</span><span class="p">,</span> <span class="s1">'세종'</span><span class="p">,</span> <span class="s1">'경기'</span><span class="p">,</span> <span class="s1">'강원'</span><span class="p">,</span> <span class="s1">'충북'</span><span class="p">,</span> <span class="s1">'충남'</span><span class="p">,</span>
+ <span class="s1">'전북'</span><span class="p">,</span> <span class="s1">'전남'</span><span class="p">,</span> <span class="s1">'경북'</span><span class="p">,</span> <span class="s1">'경남'</span><span class="p">,</span> <span class="s1">'제주'</span><span class="p">,</span> <span class="s1">'서울'</span><span class="p">]</span>
+
+<span class="n">Apartment_cost_each</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">Apartment_cost</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">"year"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">region_cols</span><span class="p">)</span>
+<span class="n">Apartment_cost_each</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">xaxis</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">tickmode</span> <span class="o">=</span> <span class="s1">'array'</span><span class="p">,</span>
+        <span class="n">tickvals</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2007</span><span class="p">,</span> <span class="mi">2022</span><span class="p">)],</span>
+        <span class="n">ticktext</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">년"</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2007</span><span class="p">,</span> <span class="mi">2022</span><span class="p">)]),</span>
+    <span class="n">yaxis</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">tickmode</span> <span class="o">=</span> <span class="s1">'array'</span><span class="p">,</span>
+        <span class="n">tickvals</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">181</span><span class="p">,</span> <span class="mi">30</span><span class="p">)],</span>
+        <span class="n">ticktext</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">/</span><span class="mi">100</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">181</span><span class="p">,</span> <span class="mi">30</span><span class="p">)]),</span>
+    <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">l</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+    <span class="n">template</span><span class="o">=</span><span class="s2">"plotly_dark"</span>
+<span class="p">)</span>
+
+<span class="n">Apartment_cost_each</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://github.com/Hyeok-Ju/yh_zoo/raw/master/images/2.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>아래 지도 그림은 첫 번째는 기준 년도인 2017년 지도와 2020년 지도이다.<p></p>
+</li>
+<li>
+<p>2020년 지도를 보았을때 전체적으로 특별시,광역시 기준으로 실거래 지수가 증가한 것을 볼 수 있고, 그외 지역들은 소폭 감소한 것을 볼 수 있다.</p>
+<p></p>
+</li>
+<li>
+<p>많은 지역을 자세히 살펴보면 좋겠지만, 타깃 지역을 설정하여 분석 추가적으로 살펴보겠다.</p>
+<ul>
+<li>2017년~2020년 아파트 가격이 가장 많이 떨어진 곳 : 경남 </li>
+<li>2017년~2020년 아파트 가격이 가장 많이 오른 곳 : 세종<p></p>
+</li>
+</ul>
+</li>
+<li>
+<p>이 두곳을 중점적으로 살펴보겠다.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Apartment_cost</span> <span class="o">=</span> <span class="n">Apartment_cost</span><span class="p">[[</span><span class="s2">"year"</span><span class="p">,</span> <span class="s2">"서울"</span><span class="p">,</span> <span class="s2">"부산"</span><span class="p">,</span> <span class="s2">"대구"</span><span class="p">,</span> <span class="s2">"인천"</span><span class="p">,</span> <span class="s2">"광주"</span><span class="p">,</span> <span class="s2">"대전"</span><span class="p">,</span> <span class="s2">"울산"</span><span class="p">,</span> <span class="s2">"세종"</span><span class="p">,</span> <span class="s2">"경기"</span><span class="p">,</span> <span class="s2">"강원"</span><span class="p">,</span> <span class="s2">"충북"</span><span class="p">,</span> <span class="s2">"충남"</span><span class="p">,</span> <span class="s2">"전북"</span><span class="p">,</span> <span class="s2">"전남"</span><span class="p">,</span> <span class="s2">"경북"</span><span class="p">,</span> <span class="s2">"경남"</span><span class="p">,</span> <span class="s2">"제주"</span><span class="p">]]</span>
+<span class="n">Apartment_cost</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">Apartment_cost</span><span class="p">,</span> <span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">'year'</span><span class="p">],</span> <span class="n">value_vars</span><span class="o">=</span><span class="p">[</span> <span class="s2">"서울"</span><span class="p">,</span> <span class="s2">"부산"</span><span class="p">,</span> <span class="s2">"대구"</span><span class="p">,</span> <span class="s2">"인천"</span><span class="p">,</span> <span class="s2">"광주"</span><span class="p">,</span> <span class="s2">"대전"</span><span class="p">,</span> <span class="s2">"울산"</span><span class="p">,</span> <span class="s2">"세종"</span><span class="p">,</span> <span class="s2">"경기"</span><span class="p">,</span> <span class="s2">"강원"</span><span class="p">,</span> <span class="s2">"충북"</span><span class="p">,</span> <span class="s2">"충남"</span><span class="p">,</span> <span class="s2">"전북"</span><span class="p">,</span> <span class="s2">"전남"</span><span class="p">,</span> <span class="s2">"경북"</span><span class="p">,</span> <span class="s2">"경남"</span><span class="p">,</span> <span class="s2">"제주"</span><span class="p">])</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">'year'</span><span class="p">)</span>
+<span class="n">Apartment_cost</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"year"</span><span class="p">,</span> <span class="s2">"region"</span><span class="p">,</span> <span class="s2">"value"</span><span class="p">]</span>
+
+
+<span class="n">regions</span><span class="p">[</span><span class="s2">"CTP_KOR_NM"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'서울'</span><span class="p">,</span> <span class="s1">'부산'</span><span class="p">,</span> <span class="s1">'대구'</span><span class="p">,</span> <span class="s1">'인천'</span><span class="p">,</span> <span class="s1">'광주'</span><span class="p">,</span> <span class="s1">'대전'</span><span class="p">,</span> <span class="s1">'울산'</span><span class="p">,</span> <span class="s1">'세종'</span><span class="p">,</span> <span class="s1">'경기'</span><span class="p">,</span> <span class="s1">'강원'</span><span class="p">,</span> <span class="s1">'충북'</span><span class="p">,</span> <span class="s1">'충남'</span><span class="p">,</span> <span class="s1">'전북'</span><span class="p">,</span> <span class="s1">'전남'</span><span class="p">,</span> <span class="s1">'경북'</span><span class="p">,</span> <span class="s1">'경남'</span><span class="p">,</span> <span class="s1">'제주'</span><span class="p">]</span>
+<span class="n">regions_geometry</span> <span class="o">=</span> <span class="n">regions</span><span class="p">[[</span><span class="s2">"CTP_KOR_NM"</span><span class="p">,</span> <span class="s2">"geometry"</span><span class="p">]]</span> 
+<span class="n">regions_geometry</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"region"</span><span class="p">,</span> <span class="s2">"geometry"</span><span class="p">]</span>
+
+<span class="n">regions_geometry</span> <span class="o">=</span> <span class="n">regions_geometry</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="mi">4326</span><span class="p">)</span>
+<span class="n">regions_geometry</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">regions_geometry</span><span class="o">.</span><span class="n">to_json</span><span class="p">())</span>
+
+<span class="n">Apartment_cost_2017</span> <span class="o">=</span> <span class="n">Apartment_cost</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">Apartment_cost</span><span class="p">[</span><span class="s2">"year"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"2017"</span><span class="p">]</span>
+<span class="n">Apartment_cost_2020</span> <span class="o">=</span> <span class="n">Apartment_cost</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">Apartment_cost</span><span class="p">[</span><span class="s2">"year"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"2020"</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">choropleth_mapbox</span><span class="p">(</span><span class="n">Apartment_cost_2017</span><span class="p">,</span> <span class="n">geojson</span><span class="o">=</span><span class="n">regions_geometry</span><span class="p">,</span>
+                     <span class="n">locations</span><span class="o">=</span><span class="s1">'region'</span><span class="p">,</span>
+                     <span class="n">color</span><span class="o">=</span><span class="s1">'value'</span><span class="p">,</span>
+                     <span class="n">color_continuous_scale</span><span class="o">=</span><span class="s1">'RdBu'</span><span class="p">,</span>
+                     <span class="n">range_color</span><span class="o">=</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="mi">170</span><span class="p">),</span>
+                     <span class="n">featureidkey</span><span class="o">=</span><span class="s2">"properties.region"</span><span class="p">,</span>
+                     <span class="n">mapbox_style</span><span class="o">=</span><span class="s1">'carto-positron'</span><span class="p">,</span>
+                     <span class="n">center</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"lat"</span><span class="p">:</span> <span class="mf">36.8467</span><span class="p">,</span> <span class="s2">"lon"</span><span class="p">:</span> <span class="mf">127.9462</span><span class="p">},</span> 
+                     <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+                     <span class="n">zoom</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">margin</span><span class="o">=</span><span class="p">{</span><span class="s2">"r"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">"t"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">"l"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">"b"</span><span class="p">:</span><span class="mi">0</span><span class="p">})</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://github.com/Hyeok-Ju/yh_zoo/raw/master/images/3.png" alt=""></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">choropleth_mapbox</span><span class="p">(</span><span class="n">Apartment_cost_2020</span><span class="p">,</span> <span class="n">geojson</span><span class="o">=</span><span class="n">regions_geometry</span><span class="p">,</span>
+                     <span class="n">locations</span><span class="o">=</span><span class="s1">'region'</span><span class="p">,</span>
+                     <span class="n">color</span><span class="o">=</span><span class="s1">'value'</span><span class="p">,</span>
+                     <span class="n">color_continuous_scale</span><span class="o">=</span><span class="s1">'RdBu'</span><span class="p">,</span>
+                     <span class="n">range_color</span><span class="o">=</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="mi">170</span><span class="p">),</span>
+                     <span class="n">featureidkey</span><span class="o">=</span><span class="s2">"properties.region"</span><span class="p">,</span>
+                     <span class="n">mapbox_style</span><span class="o">=</span><span class="s1">'carto-positron'</span><span class="p">,</span>
+                     <span class="n">center</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"lat"</span><span class="p">:</span> <span class="mf">36.8467</span><span class="p">,</span> <span class="s2">"lon"</span><span class="p">:</span> <span class="mf">127.9462</span><span class="p">},</span> 
+                     <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+                     <span class="n">zoom</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">margin</span><span class="o">=</span><span class="p">{</span><span class="s2">"r"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">"t"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">"l"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">"b"</span><span class="p">:</span><span class="mi">0</span><span class="p">})</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://github.com/Hyeok-Ju/yh_zoo/raw/master/images/4.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="3-4.-수요와-공급-">
+<a class="anchor" href="#3-4.-%EC%88%98%EC%9A%94%EC%99%80-%EA%B3%B5%EA%B8%89-" aria-hidden="true"><span class="octicon octicon-link"></span></a>3-4. 수요와 공급 <a class="anchor" id="section_3_4"></a><a class="anchor-link" href="#3-4.-%EC%88%98%EC%9A%94%EC%99%80-%EA%B3%B5%EA%B8%89-"> </a>
+</h4>
+<ul>
+<li>주제와 부합하여 타깃지역에 기본적인 경제 원리인 수요와 공급의 법칙이 적용되는지 확인보겠다. </li>
+<li>여기서 <em>수요</em>는 <strong>인구 유입(증가)</strong>, <em>공급</em>은 <strong>미분양주택수</strong>로 볼 예정이다.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="3-5.-타깃-설정과-수요와-공급-적용-">
+<a class="anchor" href="#3-5.-%ED%83%80%EA%B9%83-%EC%84%A4%EC%A0%95%EA%B3%BC-%EC%88%98%EC%9A%94%EC%99%80-%EA%B3%B5%EA%B8%89-%EC%A0%81%EC%9A%A9-" aria-hidden="true"><span class="octicon octicon-link"></span></a>3-5. 타깃 설정과 수요와 공급 적용 <a class="anchor" id="section_3_5"></a><a class="anchor-link" href="#3-5.-%ED%83%80%EA%B9%83-%EC%84%A4%EC%A0%95%EA%B3%BC-%EC%88%98%EC%9A%94%EC%99%80-%EA%B3%B5%EA%B8%89-%EC%A0%81%EC%9A%A9-"> </a>
+</h4>
+<ul>
+<li>타깃 지역은 위에서 언급한 대로 경남과 세종으로 하였다.<p></p>
+</li>
+<li>경남과 세종의 미분양 주택의 양과 인구 증가율을 살펴보았을 때<ul>
+<li>경남은 4개년 동안 꾸준하게 미분양된 주택수가 넘쳐났고, 인구 유입(증가)는 거의 이뤄지지 않아, 수요과 공급의 법칙으로 보면 공급은 많은데 수요가 많지않아 집값 하락이 이루져졌다고 예상된다. </li>
+<li>세종은 극단적으로 4개년 동안 미분양된 주택이 없다고 볼 수 있을 정도로 집이 부족하였고, 그에 비해 인구 유입이 둔화되고 있지만 그래도 많기 때문에, 수요는 증가하는데 공급이 극단적으로 적어 시군구 중에 가장 높은 집값 상승률을 보여줬다고 예상한다.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">unsold_home_prepared</span><span class="p">(</span><span class="n">unsold_home</span><span class="p">):</span>
+    <span class="n">col1</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"date"</span><span class="p">]</span>
+    <span class="n">col2</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">unsold_home</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()]</span>
+    <span class="n">col</span> <span class="o">=</span> <span class="n">col1</span> <span class="o">+</span> <span class="n">col2</span>
+    <span class="n">unsold_home</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">col</span>
+    <span class="n">unsold_home</span> <span class="o">=</span> <span class="n">unsold_home</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">unsold_home</span><span class="p">[</span><span class="s2">"date"</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">unsold_home</span><span class="p">[</span><span class="s2">"date"</span><span class="p">],</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"%Y-%m-</span><span class="si">%d</span><span class="s2">"</span><span class="p">)</span>
+    <span class="n">unsold_home</span><span class="p">[</span><span class="s2">"year"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">year</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">unsold_home</span><span class="p">[</span><span class="s2">"date"</span><span class="p">]]</span>
+    
+    <span class="c1">#년도 별 합산</span>
+    <span class="n">unsold_home_year</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">unsold_home</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"year"</span><span class="p">):</span>
+        <span class="n">subset</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
+        <span class="n">subset</span><span class="p">[</span><span class="s2">"year"</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">unsold_home_year</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">subset</span><span class="p">)</span>
+        
+    <span class="n">unsold_home_year</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">unsold_home_year</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">unsold_home_year</span>
+
+<span class="c1"># unsold_home 전처리</span>
+<span class="n">unsold_home</span> <span class="o">=</span> <span class="n">unsold_home_prepared</span><span class="p">(</span><span class="n">unsold_home</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">unsold_home_17_20</span> <span class="o">=</span> <span class="n">unsold_home</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">unsold_home</span><span class="p">[</span><span class="s2">"year"</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mi">2017</span><span class="p">,</span><span class="mi">2018</span><span class="p">,</span><span class="mi">2019</span><span class="p">,</span> <span class="mi">2020</span><span class="p">])]</span>
+
+<span class="n">unsold_home_each</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">unsold_home_17_20</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">"year"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="s2">"경남"</span><span class="p">,</span> <span class="s2">"세종"</span><span class="p">],</span> <span class="n">markers</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">unsold_home_each</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">xaxis</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">tickmode</span> <span class="o">=</span> <span class="s1">'array'</span><span class="p">,</span>
+        <span class="n">tickvals</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2017</span><span class="p">,</span> <span class="mi">2021</span><span class="p">)],</span>
+        <span class="n">ticktext</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">년"</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2017</span><span class="p">,</span> <span class="mi">2021</span><span class="p">)]),</span>
+    <span class="n">yaxis</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">tickmode</span> <span class="o">=</span> <span class="s1">'array'</span><span class="p">,</span>
+        <span class="n">tickvals</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">251000</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)],</span>
+        <span class="n">ticktext</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">세대"</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">251000</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)]),</span>
+    <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">l</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+    <span class="n">template</span><span class="o">=</span><span class="s2">"plotly_dark"</span><span class="p">,</span>
+    <span class="n">width</span> <span class="o">=</span> <span class="mi">600</span>
+<span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://github.com/Hyeok-Ju/yh_zoo/raw/master/images/5.png" alt=""></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">population_38</span> <span class="o">=</span> <span class="n">population</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">population</span><span class="p">[</span><span class="s2">"adm_nm"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"경상남도"</span><span class="p">]</span>
+<span class="n">population_29</span> <span class="o">=</span> <span class="n">population</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">population</span><span class="p">[</span><span class="s2">"adm_nm"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"세종특별자치시"</span><span class="p">]</span>
+
+<span class="c1">### 전별도 대비 인구 증감율 구하기</span>
+<span class="n">pp_increase_38</span> <span class="o">=</span> <span class="p">[</span><span class="n">population_38</span><span class="p">[</span><span class="s2">"house_cnt"</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">population_38</span><span class="p">[</span><span class="s2">"house_cnt"</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)]</span>
+<span class="n">pp_increase_29</span> <span class="o">=</span> <span class="p">[</span><span class="n">population_29</span><span class="p">[</span><span class="s2">"house_cnt"</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">population_29</span><span class="p">[</span><span class="s2">"house_cnt"</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)]</span>
+
+<span class="n">population_38</span> <span class="o">=</span> <span class="n">population_38</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">population_38</span><span class="p">[</span><span class="s2">"year"</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mi">2017</span><span class="p">,</span><span class="mi">2018</span><span class="p">,</span><span class="mi">2019</span><span class="p">,</span><span class="mi">2020</span><span class="p">])]</span>
+<span class="n">population_38</span><span class="p">[</span><span class="s2">"ratio"</span><span class="p">]</span> <span class="o">=</span> <span class="n">pp_increase_38</span>
+<span class="n">population_38</span> <span class="o">=</span> <span class="n">population_38</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">population_29</span> <span class="o">=</span> <span class="n">population_29</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">population_29</span><span class="p">[</span><span class="s2">"year"</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mi">2017</span><span class="p">,</span><span class="mi">2018</span><span class="p">,</span><span class="mi">2019</span><span class="p">,</span><span class="mi">2020</span><span class="p">])]</span>
+<span class="n">population_29</span><span class="p">[</span><span class="s2">"ratio"</span><span class="p">]</span> <span class="o">=</span> <span class="n">pp_increase_29</span>
+<span class="n">population_29</span> <span class="o">=</span> <span class="n">population_29</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">population_29_38</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">population_38</span><span class="p">,</span> <span class="n">population_29</span><span class="p">])</span>
+
+<span class="n">population_29_38</span><span class="p">[</span><span class="s2">"adm_nm"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"경남"</span><span class="p">,</span> <span class="s2">"경남"</span><span class="p">,</span> <span class="s2">"경남"</span><span class="p">,</span> <span class="s2">"경남"</span><span class="p">,</span> <span class="s2">"세종"</span><span class="p">,</span> <span class="s2">"세종"</span><span class="p">,</span> <span class="s2">"세종"</span><span class="p">,</span> <span class="s2">"세종"</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">population_29_38_fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">population_29_38</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">"year"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">"ratio"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"adm_nm"</span><span class="p">)</span>
+<span class="n">population_29_38_fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">xaxis</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">tickmode</span> <span class="o">=</span> <span class="s1">'array'</span><span class="p">,</span>
+        <span class="n">tickvals</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2017</span><span class="p">,</span> <span class="mi">2021</span><span class="p">)],</span>
+        <span class="n">ticktext</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">년"</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2017</span><span class="p">,</span> <span class="mi">2021</span><span class="p">)]),</span>
+    <span class="n">yaxis</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+         <span class="n">tickmode</span> <span class="o">=</span> <span class="s1">'array'</span><span class="p">,</span>
+         <span class="n">tickvals</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">,</span> <span class="mf">0.20</span><span class="p">],</span>
+         <span class="n">ticktext</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"0%"</span><span class="p">,</span> <span class="s2">"5%"</span><span class="p">,</span> <span class="s2">"10%"</span><span class="p">,</span> <span class="s2">"15%"</span><span class="p">,</span> <span class="s2">"20%"</span><span class="p">]),</span>
+    <span class="n">margin</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">l</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+    <span class="n">template</span><span class="o">=</span><span class="s2">"plotly_dark"</span><span class="p">,</span>
+    <span class="n">width</span> <span class="o">=</span> <span class="mi">600</span>
+<span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://github.com/Hyeok-Ju/yh_zoo/raw/master/images/6.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.-결론-">
+<a class="anchor" href="#4.-%EA%B2%B0%EB%A1%A0-" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. 결론 <a class="anchor" id="chapter4"></a><a class="anchor-link" href="#4.-%EA%B2%B0%EB%A1%A0-"> </a>
+</h3>
+<h4 id="4-1.-한계점-">
+<a class="anchor" href="#4-1.-%ED%95%9C%EA%B3%84%EC%A0%90-" aria-hidden="true"><span class="octicon octicon-link"></span></a>4-1. 한계점 <a class="anchor" id="section_4_1"></a><a class="anchor-link" href="#4-1.-%ED%95%9C%EA%B3%84%EC%A0%90-"> </a>
+</h4>
+<ul>
+<li>통계적 기법의 부재<ul>
+<li>여러 데이터의 교집합된 데이터가 얼마 없다고 판단하여.... 통계적인 기법을 사용하기에는 표본이 부족하다고 판단하여 단순한 추론에서 마무리 지었다. </li>
+</ul>
+</li>
+<li>집값에 대한 다양한 세부 요인 존재하기 때문에 단순하게 결론을 지으면 안된다고 생각한다. 그렇기에 데이터를 보고 단순한 추론에서 마루리 하였다.<ul>
+<li>물가 상승 </li>
+<li>원자재 값 상승 </li>
+<li>인건비 상승</li>
+</ul>
+</li>
+<li>극단적인 타겟 설정으로 인해 주제에 부합하게 만든 느낌이 있기 때문에 추후 분석을 더 진행하게 된다면 더 다양한 지역을 같이 분석하는게 좋을 것 같다. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="4-2.-추후-연구-방향-">
+<a class="anchor" href="#4-2.-%EC%B6%94%ED%9B%84-%EC%97%B0%EA%B5%AC-%EB%B0%A9%ED%96%A5-" aria-hidden="true"><span class="octicon octicon-link"></span></a>4-2. 추후 연구 방향 <a class="anchor" id="section_4_2"></a><a class="anchor-link" href="#4-2.-%EC%B6%94%ED%9B%84-%EC%97%B0%EA%B5%AC-%EB%B0%A9%ED%96%A5-"> </a>
+</h4>
+<ul>
+<li>세부적인 요인을 추가하여 분석을 진행하면 좋을 것 같다. </li>
+<li>해당 데이터로 집값의 양극화를 분석해도 좋을 것 같다. </li>
+</ul>
+
+</div>
+</div>
+</div>
+&lt;/div&gt;
+ 
+
+</ul>
+</div>
+</div></div>
+</ul>
+</div>
+</div></div>
+</div>
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="Hyeok-Ju/yh_zoo"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/yh_zoo/project/data%20mining/excersize/2022/06/05/final_project.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/yh_zoo/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/yh_zoo/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/yh_zoo/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/yh_zoo/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/yh_zoo/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
